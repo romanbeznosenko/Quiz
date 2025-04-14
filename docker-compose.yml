@@ -1,0 +1,32 @@
+services:
+  mysql:
+    container_name: mysql-db
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: test_db
+      MYSQL_USER: username
+      MYSQL_PASSWORD: password
+    volumes:
+      - mysql_data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    networks:
+      - mysql_network
+    restart: unless-stopped
+
+  adminer:
+    container_name: adminer
+    image: adminer
+    ports:
+      - "8080:8080"
+    networks:
+      - mysql_network
+    restart: unless-stopped
+
+networks:
+  mysql_network:
+    driver: bridge
+
+volumes:
+  mysql_data:

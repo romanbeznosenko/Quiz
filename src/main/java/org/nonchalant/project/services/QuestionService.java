@@ -1,7 +1,6 @@
 package org.nonchalant.project.services;
 
 import org.nonchalant.project.entities.Question;
-import org.nonchalant.project.entities.Question;
 import org.nonchalant.project.repositories.QuestionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

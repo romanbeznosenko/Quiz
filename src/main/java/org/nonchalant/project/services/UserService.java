@@ -1,6 +1,5 @@
 package org.nonchalant.project.services;
 
-import java.util.List;
 import java.util.Optional;
 
 import org.nonchalant.project.entities.User;

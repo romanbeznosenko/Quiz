@@ -1,6 +1,5 @@
 package org.nonchalant.project.controllers;
 
-import org.apache.coyote.Response;
 import org.nonchalant.project.entities.User;
 import org.nonchalant.project.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
